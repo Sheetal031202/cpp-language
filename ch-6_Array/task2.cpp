@@ -8,22 +8,25 @@ main()
     cin >> size;
 
     int a[size];
-    int j=0;
 
     for (int i = 0; i < size; i++)
     {
         cout << "Enter array element " << i << " :";
         cin >> a[i];
     }
-    for (int i = 0; i ==j; i++)
+
+    int sum;
+    cout << "Enter SUm : ";
+    cin >> sum;
+
+    for (int i = 0; i < size; i++)
     {
-    //  cout << a[i];   
-        for (j = i + 1; j < size; j++)
+        for (int j = i + 1; j < size; j++)
         {
 
-            if (a[i] != a[j])
+            if ((a[i] + a[j] == sum))
             {
-                cout << a[j] << "\t";
+                cout << " your number is " << a[i] << " and " << a[j] <<endl;
             }
         }
     }

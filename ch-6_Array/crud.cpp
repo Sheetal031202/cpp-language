@@ -17,6 +17,8 @@ main()
 
     // option input
     int n;
+    // posotion,element input
+    int pos, element;
 
     // clear terminal
     system("cls");
@@ -48,7 +50,7 @@ main()
 
             if (pos < size && pos >= 0)
             {
-                for (int i = size - 1; i < pos; i++)
+                for (int i = size - 1; i < pos; i--)
                 {
 
                     a[i + 1] = a[i];
@@ -61,27 +63,54 @@ main()
         case 2:
             cout << "Push" << endl
                  << endl;
+            cout << "Enter element :";
+            cin >> element;
+            a[size] = element;
+            size++;
+
             break;
 
         case 3:
             cout << "Fetch" << endl
                  << endl;
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i <size; i++)
             {
-                cout << a[i] << "\t";
+                for (int j = i + 1; j < size; j++)
+                {
+                    if (a[i]!=a[j])
+                    {
+                        cout << a[i] << "\t";
+                    }
+                }
             }
             break;
         case 4:
             cout << "Update" << endl
                  << endl;
+            cout << "Enter Position :";
+            cin >> pos;
+            cout << "Enter element :";
+            cin >> element;
+            a[pos] = element;
             break;
+
         case 5:
             cout << "Pop" << endl
                  << endl;
+            size--;
             break;
         case 6:
             cout << "Delete" << endl
                  << endl;
+            cout << "Enter Position :";
+            cin >> pos;
+
+            for (int i = pos; pos < size; i++)
+            {
+                a[i] = a[i + 1];
+            }
+            size--;
+
             break;
 
         case 0:
