@@ -1,0 +1,81 @@
+// #include <iostream>
+// using namespace std;
+
+// // scope resolution operator
+// // 1..to print global variable
+
+// // this is global variable
+// int x=15;
+
+// int main(){
+
+//     int x=25;
+// cout << "GLOBAL : " << ::x << endl;
+// cout << "LOCAL : " << x;
+//     return 0;
+// }
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// 2..to print static member
+
+// amuk variable eva hoy jema name same aavjtu hoy ,suppose koi school na students na data levano hoy to scholl name same j reva nu chhe
+// static ni value global ma lakhvani( class ni bar , mail ni pela)
+// and static no use karine function bhi banavi skaiye but e function ma kai print karavu hoy to static hase variable ej print thase
+// static ni value change na kari sakiye
+// static ne print karava object ni jarur nathi
+// static private ke public kai fark na pade
+
+#include <iostream>
+using namespace std;
+
+// static keyword
+class Students
+{
+
+private:
+    int no;
+    char name[20];
+    static char school[20];
+
+public:
+    void setData()
+    {
+        cout << "Enter no : ";
+        cin >> no;
+        cout << "Enter name :";
+        cin >> name;
+    }
+
+    void getData()
+    {
+        cout << "No:" << no << endl;
+        fflush(stdin);
+        cout << "Name:" << name << endl;
+        cout << "school:" << school << endl;
+    }
+
+  static  void staticDATA(){
+cout << "roll: " ,
+    }
+};
+
+// global ma lakhvanu static chhe but kya object no?so Students
+char Students::school[20] = "asb school";
+
+int main()
+{
+
+
+    Students stu;
+
+
+    stu.setData();
+
+    cout << endl
+         << "Output"
+         << endl
+         << endl;
+    stu.getData();
+
+    return 0;
+}
