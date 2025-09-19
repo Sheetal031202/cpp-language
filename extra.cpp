@@ -1,30 +1,8 @@
-#include <iostream>
-using namespace std;
+#include "a.cpp";
 
-main()
+int main()
 {
-    int size;
-    cout << "Enter array size: ";
-    cin >> size;
+    FixedDepositAccount f1;
 
-    int a[size];
-    int j=0;
-
-    for (int i = 0; i < size; i++)
-    {
-        cout << "Enter array element " << i << " :";
-        cin >> a[i];
-    }
-    for (int i = 0; i ==j; i++)
-    {
-    //  cout << a[i];   
-        for (j = i + 1; j < size; j++)
-        {
-
-            if (a[i] != a[j])
-            {
-                cout << a[j] << "\t";
-            }
-        }
-    }
+    f1.bankProcess();
 }
