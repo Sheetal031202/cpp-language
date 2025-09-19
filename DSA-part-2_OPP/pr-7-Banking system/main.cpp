@@ -4,12 +4,16 @@ using namespace std;
 
 int main()
 {
-    //  bank account and take initial info
+
+    // object
     BankAc b1;
     b1.BankAcc();
     SavingInterest s1;
     Overdraft o1;
     Fixed f1;
+
+    
+    // choice
     int choice;
     while (true)
     {
@@ -65,9 +69,10 @@ int main()
             cout << "Invalid choice. Try again.\n";
         }
 
-        cout << "\nPress any key to continue...";
+        cout << endl
+             << "Press any key to continue...";
         cin.ignore();
-        cin.get(); // wait for user input before showing menu again
+        cin.get();
     }
 
     return 0;
