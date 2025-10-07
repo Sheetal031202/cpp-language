@@ -1,14 +1,18 @@
 #include<iostream>
-using namespace  std;
+using namespace std;
+
+class Node{
+int data;
+Node *ptr;
+};
 
 
+int main(){
 
-main(){
-double balance=50000;
-    double interest;
+Node *n1=new Node();
+n1->data=20;
+n1->ptr=nullptr;
 
-  
-        interest = (balance * 7.0) / 100.0;  // use 100.0 for correct double division
-        cout << "Your yearly interest is : " << interest << endl;
 
+    return 0;
 }

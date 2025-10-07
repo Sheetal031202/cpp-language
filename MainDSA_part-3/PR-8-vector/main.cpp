@@ -47,14 +47,13 @@ public:
 
         cout << endl
              << " Student data " << endl;
-                    cout<<"----------------------------------------------------"<<endl;
+        cout << "----------------------------------------------------" << endl;
 
         for (int i = 0; i < id.size(); i++)
         {
             cout << "ID: " << id[i] << "\tName: " << name[i] << endl;
         }
-               cout<<"----------------------------------------------------" <<endl;
-
+        cout << "----------------------------------------------------" << endl;
     }
 
     // insert
@@ -91,13 +90,12 @@ public:
         id.erase(id.begin() + index);
         name.erase(name.begin() + index);
 
-        cout << "student deleted successfully!" << endl;  
-             cout<<"----------------------------------------------------";
-
+        cout << "student deleted successfully!" << endl;
+        cout << "----------------------------------------------------";
     }
 
     // search
-     void search(int index)
+    void search(int index)
     {
         if (index < 0 || index >= id.size())
         {
@@ -105,10 +103,9 @@ public:
             return;
         }
 
-       cout<<"----------------------------------------------------"<<endl;
-        cout << "Id : "<< id[index] << "Name : " << name[index] << endl;
-               cout<<"----------------------------------------------------"<<endl;
-
+        cout << "----------------------------------------------------" << endl;
+        cout << "Id : " << id[index] << "Name : " << name[index] << endl;
+        cout << "----------------------------------------------------" << endl;
     }
 };
 
@@ -148,7 +145,7 @@ int main()
             m1.remove(index);
             break;
 
-                    case 5:
+        case 5:
 
             cout << "Enter index to  find student: ";
             cin >> index;
