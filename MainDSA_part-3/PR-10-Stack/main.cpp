@@ -84,6 +84,11 @@ public:
             cout << "IT iS NOT Full" << endl;
         }
     }
+    // 6 top
+      void topp()
+    {
+        cout <<"TOP : " <<  arr[this->top] << endl;
+    }
 };
 int main()
 {
@@ -130,6 +135,9 @@ int main()
             break;
         case 5:
             stack.isFull();
+            break;
+             case 6:
+            stack.topp();
             break;
         default:
             cout << "Invalid Choice";
