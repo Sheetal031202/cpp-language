@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "task-2-cpp": "cpp",
         "new": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "vector": "cpp"
     }
 }

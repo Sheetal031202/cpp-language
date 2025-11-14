@@ -57,6 +57,7 @@ public:
         {
             cout << "Queue underflow" << endl;
         }
+        // last element bhi remove thvano hoy tyare empty thay jay queue etle front and rear ne -1 kari didha
         else if (this->rear == this->front)
         {
             cout << "Deleted element: " << this->arr[this->front] << endl;
